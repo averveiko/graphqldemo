@@ -1,4 +1,4 @@
-#Demo project using graphQL
+# Demo project using graphQL
 
 TIPS: for use Lombok install plugin and restart IDEA
 
@@ -6,7 +6,7 @@ TIPS: for use Lombok install plugin and restart IDEA
 
 ## Mutation
 query:
-```json
+```
 mutation {
   createVehicle(type: "Car", modelCode: "LandCruser", brandName: "Toyota", launchDate: "2020-01-10")
   {
@@ -15,7 +15,7 @@ mutation {
 }
 ```
 answer:
-```json
+```
 {
   "data": {
     "createVehicle": {
@@ -28,7 +28,7 @@ answer:
 
 ## Query
 query:
-```json
+```
 query {
   vehicles(count: 2) {
     id, type, modelCode, modelCode, launchDate
@@ -37,7 +37,7 @@ query {
 ```
 
 answer:
-```json
+```
 {
   "data": {
     "vehicles": [
